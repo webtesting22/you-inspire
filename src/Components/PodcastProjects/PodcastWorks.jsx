@@ -40,7 +40,7 @@ const PodcastWorks = () => {
                     <div className="fade-in">
                         {filteredPodcasts.map((item, index) => (
                             <div data-aos="fade-left"
-                            data-aos-duration="2000" data-aos-delay="600">
+                            data-aos-duration="1000" data-aos-delay="300">
                             <Row key={index} >
                                 <Col lg={12}>
                                     <div>

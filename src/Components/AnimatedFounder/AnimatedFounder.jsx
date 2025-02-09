@@ -25,7 +25,7 @@ const AnimatedFounder = () => {
                                 <h2>
                                     Jack Carter
                                 </h2>
-                                <p>Vestibulum volutpat pretium libero. Integer tincidunt. Ut tincidunt tincidunt erat. Nullam sagittis. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quibusdam quas quis dignissimos! Saepe tempore incidunt officia, rerum at assumenda aspernatur numquam. Fugiat eligendi eveniet perspiciatis dolore commodi aliquid laborum.</p>
                                 <div className="Socialicons">
                                     <ul style={{ display: "flex", gap: "20px", listStyle: "none", padding: "0px" }}>
                                         <li><AiFillInstagram /></li>
