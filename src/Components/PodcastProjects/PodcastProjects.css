@@ -1,6 +1,7 @@
 #PodcastWorksContainer {
     background-color: black;
     color: white;
+    overflow: hidden;
 }
 
 .PodcastCardContainer {
