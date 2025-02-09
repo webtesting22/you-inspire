@@ -5,7 +5,8 @@ const PodcastData = [
         title: "Good design is made from coffee",
         description: "Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Suspendisse eu ligula. Nunc nec neque. Praesent ut ligula non mi varius sagittis. Aliquam erat volutpat.",
         author: "with Isaiah Fischer",
-        tag: "Design"
+        tag: "Design",
+        category: "Design"
     },
     {
         EPDate: "9.20.2022",
@@ -13,7 +14,8 @@ const PodcastData = [
         title: "Good design is made from coffee",
         description: "Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Suspendisse eu ligula. Nunc nec neque. Praesent ut ligula non mi varius sagittis. Aliquam erat volutpat.",
         author: "with Isaiah Fischer",
-        tag: "Design"
+        tag: "Design",
+        category: "Design"
     },
     {
         EPDate: "9.20.2022",
@@ -21,7 +23,8 @@ const PodcastData = [
         title: "Good design is made from coffee",
         description: "Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Suspendisse eu ligula. Nunc nec neque. Praesent ut ligula non mi varius sagittis. Aliquam erat volutpat.",
         author: "with Isaiah Fischer",
-        tag: "Design"
+        tag: "Socialogy",
+        category: "Socialogy"
     },
     {
         EPDate: "9.20.2022",
@@ -29,7 +32,8 @@ const PodcastData = [
         title: "Good design is made from coffee",
         description: "Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Suspendisse eu ligula. Nunc nec neque. Praesent ut ligula non mi varius sagittis. Aliquam erat volutpat.",
         author: "with Isaiah Fischer",
-        tag: "Design"
+        tag: "Socialogy",
+        category: "Socialogy"
     },
     {
         EPDate: "9.20.2022",
@@ -37,7 +41,8 @@ const PodcastData = [
         title: "Good design is made from coffee",
         description: "Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Suspendisse eu ligula. Nunc nec neque. Praesent ut ligula non mi varius sagittis. Aliquam erat volutpat.",
         author: "with Isaiah Fischer",
-        tag: "Design"
+        tag: "Socialogy",
+        category: "Socialogy"
     },
 
 ]
