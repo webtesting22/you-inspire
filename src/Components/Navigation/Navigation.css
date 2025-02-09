@@ -1,0 +1,58 @@
+.NavigationLinksContainer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.NavigationLinksContainer ul {
+    display: flex;
+    gap: 40px;
+}
+
+.LogoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.LogoContainer img {
+    width: 100px;
+}
+
+.NavigationContainer {
+    padding: 1rem 6rem;
+}
+
+.NavigationLinksContainer ul .NavigationLinks {
+    position: relative;
+}
+
+.NavigationLinksContainer ul .NavigationLinks::after {
+    content: "";
+    background-image: url("/public/Images/hoverBorderLine.svg");
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    left: 0px;
+    position: absolute;
+    bottom: -28px;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: .5s;
+}
+
+.NavigationLinksContainer ul .NavigationLinks:hover::after {
+    content: "";
+    background-image: url("/public/Images/hoverBorderLine.svg");
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    left: 0px;
+    position: absolute;
+    bottom: -28px;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: .5s;
+}

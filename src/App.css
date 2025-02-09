@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+a {
+  list-style: none;
+  font-family: "Space Grotesk", serif;
+  font-weight: 600;
+  line-height: 1rem;
+  color: #14142b;
+}
+
+p,span,li{
+  font-size: 18px;
+}
+
+
+
+.NavigationLinks {
+  color: #14142b;
+  font-size: 1rem;
+  font-weight: 500;
+  list-style: none;
+  font-family: "Space Grotesk", serif;
+}
+
+.MainHeading {
+  font-family: "Space Grotesk", serif;
+  color: #14142b;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 4.25rem;
+  font-weight: 600;
+  line-height: 4.75rem;
+}
+
+.MainHeading span{
+  font-size: 4.25rem;
+  color: #BA6F46;
+}
+.AnimatedButtonAnimation {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0rem;
+  position: sticky;
+  z-index: 555;
+
+}
+
+.AnimatedButtonAnimation button {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: .5s;
+  height: 40px;
+  min-width: 160px;
+  cursor: pointer;
+
+}
+
+.AnimatedButtonAnimation button:hover span {
+  rotate: 0deg;
+  transition: .5s;
+  margin-right: 10px;
+  margin-left: -5px !important;
+  height: 20px;
+  width: 20px;
+  background-color: black;
+}
+
+.AnimatedButtonAnimation button:hover span svg {
+  font-size: 10px;
+}
+
+.AnimatedButtonAnimation button span {
+  border: 1px solid black;
+  margin: 0px 5px;
+  rotate: -45deg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  transition: .5s;
+  height: 0px;
+  width: 0px;
+
+}
+
+.AnimatedButtonAnimation button span svg {
+  font-size: 0px;
+  transition: .5s;
+  color: #BA6F46;
+}

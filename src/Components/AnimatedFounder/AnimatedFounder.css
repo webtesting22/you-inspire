@@ -1,0 +1,36 @@
+#HostFounder{
+    background-color: black;
+    position: relative;
+    min-height: 500px;
+}
+.meetFounderContainer .MainHeading{
+    color: white;
+}
+
+#HostFounder .Animated{
+    position: relative;
+}
+#HostFounder .Animated>div {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 4rem;
+    height: 700px;
+    overflow: hidden;
+}
+#HostFounder .Animated>div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.FounderContentContainer{
+    position: absolute;
+    /* top: 0px; */
+    right: 0px;
+    width: 50%;
+    bottom: 0px;
+    color: white;
+}
+.Socialicons ul li svg{
+    font-size: 25px;
+}
