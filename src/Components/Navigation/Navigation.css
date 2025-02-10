@@ -26,11 +26,11 @@
     justify-content: space-between;
 }
 
-.NavigationLinksContainer ul .NavigationLinks {
+.NavigationLinks {
     position: relative;
 }
 
-.NavigationLinksContainer ul .NavigationLinks::after {
+.NavigationLinks::after {
     content: "";
     background-image: url("/public/Images/hoverBorderLine.svg");
     display: inline-flex;
@@ -45,7 +45,7 @@
     transition: .5s;
 }
 
-.NavigationLinksContainer ul .NavigationLinks:hover::after {
+.NavigationLinks:hover::after {
     content: "";
     background-image: url("/public/Images/hoverBorderLine.svg");
     display: inline-flex;
@@ -60,17 +60,50 @@
     transition: .5s;
 }
 
-@media (max-width:769px){
+.NavigationList {
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-around;
+    height: 100%;
+
+}
+
+.NavigationLinks {
+    /* background-color: red; */
+    margin: 20px;
+    width: 100%;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:769px) {
     .NavigationContainer {
         padding: 1rem 2rem;
     }
-    .NavigationContainer .ant-row .ant-col{
+
+    .NavigationContainer .ant-row .ant-col {
         width: 50% !important;
     }
+
+    .ant-drawer-body ul {
+        display: flex;
+
+    }
+
 }
 
 
-.ant-drawer-content-wrapper{
+.ant-drawer-content-wrapper {
     height: 80% !important;
     transition: .5s !important;
+}
+
+.ant-drawer-body {
+    background-color: rgba(186, 111, 70, 0.48) !important;
+}
+
+.ant-drawer-header {
+    background-color: rgba(186, 111, 70, 0.48) !important;
 }
