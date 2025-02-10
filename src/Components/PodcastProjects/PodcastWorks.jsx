@@ -40,33 +40,33 @@ const PodcastWorks = () => {
                     <div className="fade-in">
                         {filteredPodcasts.map((item, index) => (
                             <div data-aos="fade-left"
-                            data-aos-duration="1000" data-aos-delay="300">
-                            <Row key={index} >
-                                <Col lg={12}>
-                                    <div>
-                                        <div style={{ display: "flex", flexDirection: "column", alignItems: "start", gap: "2px" }}>
-                                            <span><b>EP {index + 1}</b></span>
-                                            <span>{item.EPDate}</span>
-                                        </div>
+                                data-aos-duration="1000" data-aos-delay="300">
+                                <Row key={index} >
+                                    <Col lg={12}>
                                         <div>
-                                            <img src={item.image} alt="" style={{ width: "100%" }} loading="lazy" />
-                                        </div>
-                                    </div>
-                                </Col>
-                                <Col lg={12}>
-                                    <div style={{ display: "flex", alignItems: "center", height: "100%" }}>
-                                        <div >
-                                            <div>
-                                                <Tag color="blue">{item.tag}</Tag>
+                                            <div style={{ display: "flex", flexDirection: "column", alignItems: "start", gap: "2px" }}>
+                                                <span><b>EP {index + 1}</b></span>
+                                                <span>{item.EPDate}</span>
                                             </div>
                                             <div>
-                                                <h2>{item.title}</h2>
-                                                <p>{item.description}</p>
+                                                <img src={item.image} alt="" style={{ width: "100%" }} loading="lazy" />
                                             </div>
                                         </div>
-                                    </div>
-                                </Col>
-                            </Row>
+                                    </Col>
+                                    <Col lg={12}>
+                                        <div style={{ display: "flex", alignItems: "center", height: "100%" }}>
+                                            <div >
+                                                <div>
+                                                    <Tag color="blue">{item.tag}</Tag>
+                                                </div>
+                                                <div>
+                                                    <h2>{item.title}</h2>
+                                                    <p>{item.description}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                </Row>
                             </div>
                         ))}
 

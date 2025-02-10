@@ -34,3 +34,28 @@
 .Socialicons ul li svg{
     font-size: 25px;
 }
+.FounderContentContainer h2{
+    margin-top: 0px;
+}
+
+@media (max-width:990px){
+    #HostFounder .MainHeading{
+        margin-bottom: 40px;
+    }
+    .FounderContentContainer{
+        position: absolute;
+        /* top: 0px; */
+        right: 0px;
+        width: 100%;
+        bottom: 0px;
+        color: white;
+    }
+    #HostFounder .Animated>div {
+        position: static;
+        left: 0px;
+        right: 0px;
+        top: 4rem;
+        height: 600px;
+        overflow: hidden;
+    }
+}

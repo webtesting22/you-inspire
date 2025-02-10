@@ -49,6 +49,7 @@ p,span,li{
   background-color: transparent;
   border: 1px solid black;
   padding: 10px 10px;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -91,4 +92,24 @@ p,span,li{
   font-size: 0px;
   transition: .5s;
   color: #BA6F46;
+}
+
+@media (max-width:900px){
+  .MainHeading {
+    font-family: "Space Grotesk", serif;
+    color: #14142b;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: unset;
+  }
+
+.MainHeading span{
+  font-size: 2rem;
+  color: #BA6F46;
+}
+.AnimatedButtonAnimation{
+  margin-bottom: 0px;
+}
 }

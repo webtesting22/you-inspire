@@ -56,3 +56,12 @@
     opacity: 1;
     transition: .5s;
 }
+
+@media (max-width:769px){
+    .NavigationContainer {
+        padding: 1rem 2rem;
+    }
+    .NavigationContainer .ant-row .ant-col{
+        width: 50% !important;
+    }
+}

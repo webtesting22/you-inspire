@@ -4,3 +4,9 @@
 .MainheadingContainer p{
     text-align: center;
 }
+
+@media (max-width:900px){
+    #AboutCompanySection{
+        margin-top: 0px;
+    }
+}

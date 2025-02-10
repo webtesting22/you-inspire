@@ -19,13 +19,13 @@ const HomeAnimated = () => {
                 <div style={{ display: "flex", justifyContent: "center", marginBottom: "2rem" }}>
                     <div className="MainheadingContainer">
                         <h1 className="MainHeading" data-aos="fade-down"
-                            data-aos-duration="2000"  data-aos-delay="300">Transforming  <span style={{ color: "#BA6F46", fontSize: "4.25rem" }}>Challenges into Triumphs: </span>Inspiring Journeys</h1>
+                            data-aos-duration="2000"  data-aos-delay="300">Transforming  <span style={{ color: "#BA6F46" }}>Challenges into Triumphs: </span>Inspiring Journeys</h1>
                     </div>
                 </div>
 
-                <div>
+                <div id="HomePageSlidersContainer">
                     <Row>
-                        <Col lg={8}>
+                        <Col lg={8} >
                             <div>
                                 <div className="LeftSideImageContainer carousel" >
                                     <img className="fade-image" src="/Images/HomepageSideImage1.jpg" alt="" loading="lazy" />

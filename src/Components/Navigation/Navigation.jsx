@@ -9,7 +9,7 @@ const MegaNavigation = () => {
             <section className="AdjustPadding">
                 <div className="NavigationContainer">
                     <Row>
-                        <Col lg={8}>
+                        <Col lg={12} md={12} style={{width:"100%"}}>
                             <div className="LogoContainer">
                                 <img
                                     src="/Images/YourInspireLogo.png"
@@ -19,7 +19,7 @@ const MegaNavigation = () => {
                                 />
                             </div>
                         </Col>
-                        <Col lg={8}>
+                        <Col lg={12} md={12} style={{width:"100%"}}>
                             <div className="NavigationLinksContainer">
                                 <ul>
                                     {NavigationLinks.map((item, index) => (
@@ -33,8 +33,8 @@ const MegaNavigation = () => {
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={8}>
-                        </Col>
+                        {/* <Col lg={8}>
+                        </Col> */}
                     </Row>
                 </div>
             </section>

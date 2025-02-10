@@ -10,9 +10,9 @@ const BrandInfo = () => {
                     <div className="MainheadingContainer">
                         <h1 className="MainHeading">Behind every dream lies a story of courage and resilience.</h1>
                         <p>Step into the minds of the world’s most inspiring figures as they share the untold moments that shaped their success. From battles with self-doubt to bold leaps of faith, their journeys reveal the power of resilience and determination.</p>
-                    <div className="AnimatedButtonAnimation">
-                        <button><span><FaArrowRightLong /></span> Show Podcasts</button>
-                    </div>
+                        <div className="AnimatedButtonAnimation">
+                            <button><span><FaArrowRightLong /></span> Show Podcasts</button>
+                        </div>
                     </div>
                 </div>
             </section>

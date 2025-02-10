@@ -114,5 +114,18 @@
         padding: 7rem 0rem;
         padding-top: 2rem !important;
     }
+    .PodcastCardContainer div .ant-row {
+        border-top: 0.2px solid rgba(255, 255, 255, 0.242);
+        border-bottom: 0.2px solid rgba(255, 255, 255, 0.242);
+        padding: 1rem 0rem;
+        transition: .5s;
+        cursor: pointer;
+    }
+    .PodcastCardContainer div .ant-row:hover {
+        border-top: 0.2px solid rgba(255, 255, 255, 0.774);
+        border-bottom: 0.2px solid rgba(255, 255, 255, 0.774);
+        padding: 2rem 0rem;
+        transition: .5s;
+    }
     
 }
