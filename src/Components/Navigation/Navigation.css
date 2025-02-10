@@ -21,6 +21,9 @@
 
 .NavigationContainer {
     padding: 1rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .NavigationLinksContainer ul .NavigationLinks {
@@ -64,4 +67,10 @@
     .NavigationContainer .ant-row .ant-col{
         width: 50% !important;
     }
+}
+
+
+.ant-drawer-content-wrapper{
+    height: 80% !important;
+    transition: .5s !important;
 }

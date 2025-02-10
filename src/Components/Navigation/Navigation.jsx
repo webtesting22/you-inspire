@@ -1,44 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
+import { Drawer, Button } from "antd";
+import { MenuOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 import NavigationLinks from "./NavigationData";
-import { Row, Col } from "antd";
-import "./Navigation.css"
+import { FaArrowRightLong } from "react-icons/fa6";
+import "./Navigation.css";
 
 const MegaNavigation = () => {
+    const [open, setOpen] = useState(false);
+
+    const showDrawer = () => {
+        setOpen(true);
+    };
+
+    const closeDrawer = () => {
+        setOpen(false);
+    };
+
     return (
         <>
             <section className="AdjustPadding">
                 <div className="NavigationContainer">
-                    <Row>
-                        <Col lg={12} md={12} style={{width:"100%"}}>
-                            <div className="LogoContainer">
-                                <img
-                                    src="/Images/YourInspireLogo.png"
-                                    alt="Your Inspire Logo"
-                                    className="LogoImage"
-                                    loading="lazy"
-                                />
-                            </div>
-                        </Col>
-                        <Col lg={12} md={12} style={{width:"100%"}}>
-                            <div className="NavigationLinksContainer">
-                                <ul>
-                                    {NavigationLinks.map((item, index) => (
-                                        <>
-                                            <li key={index} className="NavigationLinks">
-                                                {item.link}
-                                            </li>
-                                            {/* <img src="/Images/hoverBorderLine.svg" alt="" /> */}
-                                        </>
-                                    ))}
-                                </ul>
-                            </div>
-                        </Col>
-                        {/* <Col lg={8}>
-                        </Col> */}
-                    </Row>
+                    <Link to="/" className="LogoContainer">
+                        <img
+                            src="/Images/YourInspireLogo.png"
+                            alt="Your Inspire Logo"
+                            className="LogoImage"
+                            loading="lazy"
+                        />
+                    </Link>
+
+                    {/* Menu Button */}
+
+                    <div className="AnimatedButtonAnimation" style={{margin:"0px"}}>
+                        <button onClick={showDrawer} style={{minWidth:"95px"}}><span><FaArrowRightLong /></span> Menu</button>
+                    </div>
+
                 </div>
             </section>
+
+            {/* Ant Design Drawer */}
+            <Drawer
+                title=""
+                placement="top"
+                closable={true}
+                onClose={closeDrawer}
+                open={open}
+                height={300} // Controls the height of the drawer
+            >
+                <ul className="NavigationList">
+                    {NavigationLinks.map((item, index) => (
+                        <li key={index} className="NavigationLinks">
+                            {item.link}
+                        </li>
+                    ))}
+                </ul>
+            </Drawer>
         </>
-    )
-}
-export default MegaNavigation
+    );
+};
+
+export default MegaNavigation;

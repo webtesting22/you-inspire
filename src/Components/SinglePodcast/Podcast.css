@@ -1,0 +1,34 @@
+.SinglePagePodcastImage {
+    padding-right: 20px;
+    height: 100%;
+}
+.SinglePagePodcastImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.HierarchyContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0rem;
+}
+.HierarchyContainer>div{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.HierarchyContainer>div p:nth-child(1){
+    font-weight: 500;
+    margin-right: 5px;
+}
+.HierarchyContainer>div:nth-child(2)::before,
+.HierarchyContainer>div:nth-child(3)::before,
+.HierarchyContainer>div:nth-child(4)::before{
+   content: "";
+   position: absolute;
+   left: -85px;
+   width: 20%;
+   height: 2px;
+   background-color: black;
+}
