@@ -231,5 +231,14 @@
         height: 70%;
         margin-top: 70px;
 }
+.insideContentContainer .LeftSidemainPageContent{
+    color: white;
+        position: sticky;
+        z-index: 55;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 100%;
+}
 
 }
