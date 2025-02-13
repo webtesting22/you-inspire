@@ -50,6 +50,9 @@ const MegaNavigation = () => {
             <section className={`AdjustPadding ${scrolled ? "withShadow" : ""}`}>
                 <div
                     className="NavigationContainer"
+                    data-aos="fade-down"
+                    data-aos-duration="1500"
+                    data-aos-delay="800"
                     style={{
                         padding: isMobile ? "0rem 1rem" : scrolled ? "0rem 6rem" : "1rem 6rem",
                     }}

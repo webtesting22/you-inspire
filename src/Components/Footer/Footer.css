@@ -89,6 +89,14 @@
     justify-content: center;
 }
 
+.CopywriteText span a {
+    font-weight: 400 !important;
+    color: white !important;
+    line-height: unset !important;
+    text-decoration: none;
+    font-family: unset;
+}
+
 /* .CopywriteText span::before{
     content: "";
     width: 60px;

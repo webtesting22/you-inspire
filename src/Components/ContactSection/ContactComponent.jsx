@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import "./ContactComponent.css";
 import { Row, Col } from "antd";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 const ContactComponent = () => {
     const [offsetY, setOffsetY] = useState(0);
     const parallaxRef = useRef(null);
@@ -49,9 +50,12 @@ const ContactComponent = () => {
                                         <h2 className="fontFamilyAnother Mediumheading">This is a Great Spot to Promote your Freebie!</h2>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laudantium dolorem aliquid, incidunt aspernatur corporis accusamus porro nisi mollitia possimus!</p>
                                         <div className="AnimatedButtonAnimation" style={{ margin: "0px" }}>
-                                            <button >
-                                                <span><FaArrowRightLong /></span>Contact Us
-                                            </button>
+                                            <a href="tel:+919824002125">
+                                                <button>
+                                                    <span><FaArrowRightLong /></span> Contact Us
+                                                </button>
+                                            </a>
+
                                         </div>
                                     </div>
                                 </div>

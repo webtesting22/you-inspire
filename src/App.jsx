@@ -4,6 +4,7 @@ import MegaNavigation from './Components/Navigation/Navigation';
 import CommonHomeRoutes from './Components/CommonHome/CommonHomeRoute';
 import Podcast from './Components/SinglePodcast/Podcast';
 import Footer from './Components/Footer/Footer';
+import WhatsAppButton from './Components/WhatsappBtn/WhatsappBtn';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         <Route path="/" element={<CommonHomeRoutes />} />
         <Route path="/podcast" element={<Podcast />} />
       </Routes>
-      <Footer/>
+      <WhatsAppButton/>
+      <Footer />
     </Router>
   );
 }

@@ -75,7 +75,7 @@ const Footer = () => {
                     </div>
                     <br /><br />
                     <div className="CopywriteText">
-                        <span>DESIGNED BY Outlead Solutions</span>
+                        <span>DESIGNED BY <a href="https://www.outleadsolutions.com/" target="_blank"> &nbsp;Outlead Solutions</a></span>
                     </div>
                 </div>
             </section>
