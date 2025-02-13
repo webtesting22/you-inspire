@@ -4,3 +4,12 @@
 #HomepageAboutContainer .ant-row .ant-col:last-child{
     padding-left: 20px;
 }
+
+@media (max-width:900px){
+    #HomepageAboutContainer .ant-row .ant-col:first-child{
+        padding-right: 0px;
+    }
+    #HomepageAboutContainer .ant-row .ant-col:last-child{
+        padding-left: 0px;
+    }
+}

@@ -20,6 +20,11 @@ a {
   margin: 0px;
 }
 
+.smallHeading {
+  font-size: 2rem;
+  line-height: 80px;
+}
+
 .Bigheading {
   font-size: 5.4rem;
   line-height: 80px;
@@ -44,8 +49,12 @@ span,
 li {
   font-size: 1rem;
   font-family: "Raleway", serif;
+  list-style: none;
 }
 
+ul {
+  padding: 0px;
+}
 
 
 .NavigationLinks {
@@ -153,4 +162,14 @@ li {
   .AnimatedButtonAnimation {
     margin-bottom: 0px;
   }
+
+  .Bigheading {
+    font-size: 3rem;
+    line-height: 60px;
+  }
+  .Mediumheading {
+    font-size: 2.5rem;
+    line-height: 60px;
+  }
+  
 }

@@ -223,3 +223,13 @@
     background-color: white;
 }
 
+
+
+@media (max-width:900px){
+    .ContentAndSliderDesigns .insideContentContainer{
+        width: 90%;
+        height: 70%;
+        margin-top: 70px;
+}
+
+}

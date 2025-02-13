@@ -15,6 +15,7 @@
     height: 140%;
     transition: transform 0.1s ease-out;
     margin-top: 5rem;
+    object-fit: cover;
 }
 
 .InsideBoxContainer {
@@ -28,6 +29,7 @@
 }
 
 @media (max-width:1500px) {
+
     .InsideBoxContainer {
         height: 70%;
         width: 80%;
@@ -98,4 +100,24 @@
 .InsideBoxContainer .AnimatedButtonAnimation {
     display: flex;
     justify-content: start;
+}
+
+@media (max-width:900px){
+    .parallaxImageContainer img {
+        width: 100%;
+        height: 120%;
+        transition: transform 0.1s ease-out;
+        margin-top: 5rem;
+        object-fit: cover;
+    }
+    .InsideBoxContainer {
+        height: 70%;
+        width: 90%;
+        background-color: white;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0px;
+    }
 }
