@@ -49,10 +49,10 @@ const ContactComponent = () => {
                                         <h2 className="fontFamilyAnother Mediumheading">This is a Great Spot to Promote your Freebie!</h2>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laudantium dolorem aliquid, incidunt aspernatur corporis accusamus porro nisi mollitia possimus!</p>
                                         <div className="AnimatedButtonAnimation" style={{ margin: "0px" }}>
-                                                <button >
-                                                    <span><FaArrowRightLong /></span>Contact Us
-                                                </button>
-                                            </div>
+                                            <button >
+                                                <span><FaArrowRightLong /></span>Contact Us
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </Col>

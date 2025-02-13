@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./HomeAnimated.css"
 import { Row, Col } from "antd";
 import BackCurveImage from "./BackCurveImage.avif"
@@ -11,6 +11,7 @@ import 'swiper/css/navigation';
 import { Autoplay, EffectFade, Pagination, Navigation } from 'swiper/modules';
 
 const HomeAnimated = () => {
+
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
@@ -32,12 +33,17 @@ const HomeAnimated = () => {
 
     ]
 
+
+
+
     return (
         <>
             <section style={{ overflow: "hidden" }}>
                 <div className="homePageContainerMain">
                     <div className="backgroundSetImage">
-                        <div className="overlayContainerFade">
+                        <div className="overlayContainerFade" data-aos="fade-zoom-in"
+                            data-aos-duration="1000"
+                            data-aos-delay="300">
 
                         </div>
                         <img src="https://images.unsplash.com/photo-1482442120256-9c03866de390?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
@@ -46,7 +52,9 @@ const HomeAnimated = () => {
                         <div className="insideContentContainer">
                             <Row style={{ height: "100%" }}>
                                 <Col lg={12} style={{ height: "100%" }}>
-                                    <div className="LeftSidemainPageContent">
+                                    <div className="LeftSidemainPageContent" data-aos="fade-right"
+                                        data-aos-duration="1200"
+                                        data-aos-delay="600">
                                         <div>
                                             <p className="fontFamily">Podcast Podcast</p>
                                             <h1 className="fontFamilyAnother Bigheading">Where ambition meets experience</h1>
@@ -62,7 +70,9 @@ const HomeAnimated = () => {
                                 </Col>
                                 <Col lg={12} style={{ height: "100%" }}>
                                     <div style={{ height: "100%" }}>
-                                        <div style={{ height: "100%" }}>
+                                        <div style={{ height: "100%" }} data-aos="fade-right"
+                                            data-aos-duration="1300"
+                                            data-aos-delay="800">
                                             <Swiper
                                                 spaceBetween={30}
                                                 loop={true}

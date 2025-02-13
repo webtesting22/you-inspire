@@ -161,7 +161,7 @@
     align-items: center;
     justify-content: center;
     position: sticky;
-    z-index: 5555;
+    z-index: 4;
 }
 .ContentAndSliderDesigns .insideContentContainer{
         width: 70%;
@@ -199,3 +199,4 @@
     border: 1px solid rgb(255, 255, 255);
     background-color: white;
 }
+

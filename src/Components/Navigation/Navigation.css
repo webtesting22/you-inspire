@@ -29,7 +29,7 @@
     left: 0px;
     right: 0px;
     top: 0px;
-    z-index: 5;
+    z-index: 54;
 }
 
 .NavigationLinks {
@@ -157,4 +157,17 @@
 
 .ant-drawer-header {
     background-color: rgba(186, 111, 70, 0.48) !important;
+}
+
+
+.redBg {
+    background-color: white !important;
+    color: white !;
+}
+
+/* White background when scrolled 300px */
+.whiteBg {
+    background-color: white !;
+    color: black;
+    border: 1px solid black;
 }

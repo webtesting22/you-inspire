@@ -11,7 +11,7 @@ const MegaNavigation = () => {
     const [open, setOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
+    const [isScrolled, setIsScrolled] = useState(false);
     const showDrawer = () => {
         setOpen(true);
     };
@@ -37,7 +37,14 @@ const MegaNavigation = () => {
             window.removeEventListener("resize", handleResize);
         };
     }, []);
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 800); // Change color after 300px
+        };
 
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
     return (
         <>
             <section className={`AdjustPadding ${scrolled ? "withShadow" : ""}`}>
@@ -58,7 +65,7 @@ const MegaNavigation = () => {
 
                     {/* Menu Button */}
                     <div className="AnimatedButtonAnimation" style={{ margin: "0px" }}>
-                        <button onClick={showDrawer} >
+                        <button onClick={showDrawer} className={`animatedButton ${isScrolled ? "whiteBg" : "redBg"}`}>
                             <span><FaArrowRightLong /></span> Menu
                         </button>
                     </div>

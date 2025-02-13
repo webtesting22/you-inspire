@@ -10,7 +10,9 @@ const HomePageAbout = () => {
                     <div>
                         <Row>
                             <Col lg={12}>
-                                <div>
+                                <div data-aos="fade-up"
+                                    data-aos-duration="1000"
+                                    data-aos-delay="300">
                                     <p className="fontFamily">About Your Business</p>
                                     <h2 className="fontFamilyAnother Mediumheading">Where ambition meets experience</h2>
                                     <p>In a world brimming with untold stories, where dreams rise like the morning sun and ambitions carve their way through time, You Inspire is born—a sanctuary of voices, a symphony of struggles, and a testament to triumph.
@@ -19,7 +21,9 @@ const HomePageAbout = () => {
                                 </div>
                             </Col>
                             <Col lg={12}>
-                                <div className="MainContainerSpecialityImage">
+                                <div className="MainContainerSpecialityImage" data-aos="fade-right"
+                                    data-aos-duration="1000"
+                                    data-aos-delay="300">
                                     <div className="BackgroundImageContainer">
                                         <img src={ImageContainer} alt="" />
                                     </div>
