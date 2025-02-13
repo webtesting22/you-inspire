@@ -16,7 +16,9 @@
 }
 
 .LogoContainer img {
-    width: 100px;
+    width: 170px;
+    height: 60px;
+    padding: 10px 0px;
 }
 
 .NavigationContainer {

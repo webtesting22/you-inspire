@@ -168,6 +168,14 @@
         height: 70%;
         margin-top: 70px;
 }
+
+@media (max-width:1500px){
+    .ContentAndSliderDesigns .insideContentContainer{
+        width: 80%;
+        height: 70%;
+        margin-top: 70px;
+}
+}
 .ContentAndSliderDesigns .insideContentContainer .swiper {
     height: 100%;
 }
@@ -181,10 +189,25 @@
 }
 .insideContentContainer .LeftSidemainPageContent{
     color: white;
-    position: sticky;
-    z-index: 55;
-    width: 120%;
+        position: sticky;
+        z-index: 55;
+        width: 120%;
+        display: flex;
+        align-items: center;
+        height: 100%;
 }
+
+/* @media (max-width:1500px){
+    .insideContentContainer .LeftSidemainPageContent{
+        color: white;
+        position: sticky;
+        z-index: 55;
+        width: 120%;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+} */
 
 .LeftSidemainPageContent .AnimatedButtonAnimation{
     display: flex;

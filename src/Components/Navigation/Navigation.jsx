@@ -56,7 +56,7 @@ const MegaNavigation = () => {
                 >
                     <Link to="/" className="LogoContainer">
                         <img
-                            src="/Images/YourInspireLogo.png"
+                            src={isScrolled ? "./Images/YouInspirelogoBlack.png" : "./Images/YouInspirelogoWhite.png"}
                             alt="Your Inspire Logo"
                             className="LogoImage"
                             loading="lazy"

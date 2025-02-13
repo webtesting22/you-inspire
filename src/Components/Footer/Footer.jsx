@@ -4,23 +4,29 @@ import { Row, Col } from "antd";
 const Footer = () => {
     return (
         <>
-            <section id="FooterContentContainer">
-                <div className="PaddingAdjust">
-                    <div>
+            <section>
+                <div id="FooterContentContainer">
+                    <div className="FooterHeaderPart">
+                        <div>
+                            <p className="fontFamily">Popular Popular</p>
+                        </div>
                         <Row>
-                            <Col lg={12} md={12}>
-
-                            </Col>
-                            <Col lg={12} md={12}>
+                            <Col lg={8}>
                                 <div>
-                                    <p>Instagram</p>
-                                    <p>Linkedin</p>
+
+                                </div>
+                            </Col>
+                            <Col lg={8}>
+                                <div>
+
+                                </div>
+                            </Col>
+                            <Col lg={8}>
+                                <div>
+
                                 </div>
                             </Col>
                         </Row>
-                    </div>
-                    <div className="Copywritetext">
-                        <p>DESIGNED BY OUTLEAD SOLUTIONS</p>
                     </div>
                 </div>
             </section>
