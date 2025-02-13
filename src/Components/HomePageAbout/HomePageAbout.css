@@ -1,0 +1,6 @@
+#HomepageAboutContainer .ant-row .ant-col:first-child{
+    padding-right: 20px;
+}
+#HomepageAboutContainer .ant-row .ant-col:last-child{
+    padding-left: 20px;
+}

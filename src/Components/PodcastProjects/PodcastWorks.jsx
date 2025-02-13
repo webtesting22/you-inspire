@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./PodcastProjects.css"
 import PodcastData from "./PodcastData";
 import { Row, Col, Tag, Tabs } from "antd";
+import { FaArrowRightLong } from "react-icons/fa6";
 const PodcastWorks = () => {
     // Get unique categories
     const categories = ["All", ...new Set(PodcastData.map((item) => item.category))];
@@ -19,7 +20,7 @@ const PodcastWorks = () => {
             <section id="PodcastWorksContainer" className="PaddingAdjust">
                 <div style={{ display: "flex", justifyContent: "center" }}>
                     <div className="MainheadingContainer">
-                        <h1 className="MainHeading" style={{ color: "white" }} data-aos="fade-left"
+                        <h1 className="MainHeading" style={{ color: "black" }} data-aos="fade-left"
                             data-aos-duration="2000" data-aos-delay="200">Recent <span>episodes</span></h1>
                     </div>
                 </div>
@@ -38,38 +39,32 @@ const PodcastWorks = () => {
                 </div>
                 <div className="PodcastCardContainer">
                     <div className="fade-in">
-                        {filteredPodcasts.map((item, index) => (
-                            <div data-aos="fade-left"
-                                data-aos-duration="1000" data-aos-delay="300">
-                                <Row key={index} >
-                                    <Col lg={12}>
-                                        <div>
-                                            <div style={{ display: "flex", flexDirection: "column", alignItems: "start", gap: "2px" }}>
-                                                <span><b>EP {index + 1}</b></span>
-                                                <span>{item.EPDate}</span>
-                                            </div>
-                                            <div>
-                                                <img src={item.image} alt="" style={{ width: "100%" }} loading="lazy" />
-                                            </div>
-                                        </div>
-                                    </Col>
-                                    <Col lg={12}>
-                                        <div style={{ display: "flex", alignItems: "center", height: "100%" }}>
-                                            <div >
-                                                <div>
-                                                    <Tag color="blue">{item.tag}</Tag>
-                                                </div>
-                                                <div>
-                                                    <h2>{item.title}</h2>
-                                                    <p>{item.description}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                </Row>
-                            </div>
-                        ))}
+                        <Row >
+                            {filteredPodcasts.map((item, index) => (
+                                // <div data-aos="fade-left"
+                                //     data-aos-duration="1000" data-aos-delay="300">
 
+                                <Col lg={8} md={12} key={index}>
+                                    <div>
+                                        <div style={{ display: "flex", flexDirection: "column", alignItems: "start", gap: "2px" }}>
+                                                <span style={{opacity:"0.3",fontWeight:"400"}}>EP {index + 1}</span>
+                                                {/* <span>{item.EPDate}</span> */}
+                                            </div>
+                                        <div className="ImagePodcastContainer">
+                                            <img src={item.image} alt="" style={{ width: "100%" }} loading="lazy" className="podcastImage" />
+                                            <div className="AnimatedButtonAnimation">
+                                                <button><span><FaArrowRightLong /></span> See Project</button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </Col>
+
+
+                                // </div>
+                            ))}
+                        </Row>
                     </div>
                 </div>
             </section>

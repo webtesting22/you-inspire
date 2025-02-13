@@ -1,62 +1,75 @@
 #PodcastWorksContainer {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     overflow: hidden;
 }
 
 .PodcastCardContainer {
-    padding: 7rem 10rem;
+    padding: 7rem 0rem;
     padding-top: 2rem !important;
 }
 
-.PodcastCardContainer div .ant-row {
+/* .PodcastCardContainer div .ant-row {
     border-top: 0.2px solid rgba(255, 255, 255, 0.242);
     border-bottom: 0.2px solid rgba(255, 255, 255, 0.242);
     padding: 2rem 0rem;
     transition: .5s;
     cursor: pointer;
-}
+} */
 
+/* 
 .PodcastCardContainer div .ant-row:hover {
     border-top: 0.2px solid rgba(255, 255, 255, 0.774);
     border-bottom: 0.2px solid rgba(255, 255, 255, 0.774);
     padding: 3rem 0rem;
     transition: .5s;
-}
+} */
 
-.PodcastCardContainer div .ant-row .ant-col:nth-child(1) {
+.PodcastCardContainer .ant-row .ant-col {
     padding: 10px;
     display: flex;
     align-items: center;
 }
 
-.PodcastCardContainer div .ant-row .ant-col:nth-child(1) div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.PodcastCardContainer div .ant-row .ant-col:nth-child(1) div:nth-child(2) {
-    width: 80%;
+.PodcastCardContainer .ant-row .ant-col div .ImagePodcastContainer {
     overflow: hidden;
-    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
 }
 
-.PodcastCardContainer div .ant-row .ant-col:nth-child(1) div:nth-child(2) img {
-    width: 100%;
+.PodcastCardContainer .ant-row .ant-col div .ImagePodcastContainer img {
+    border-radius: 20px;
+}
+
+.PodcastCardContainer .ant-row .ant-col:nth-child(2)>div .ImagePodcastContainer,
+.PodcastCardContainer .ant-row .ant-col:nth-child(5)>div .ImagePodcastContainer {
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.PodcastCardContainer .ant-row .ant-col:nth-child(2)>div .ImagePodcastContainer img,
+.PodcastCardContainer .ant-row .ant-col:nth-child(5)>div .ImagePodcastContainer img {
     height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
-.PodcastCardContainer div .ant-row .ant-col:nth-child(2) {
-    padding: 10px;
+
+.PodcastCardContainer div .ant-row .ant-col:nth-child(2)>div .podcastImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 #PodcastWorksContainer .ant-tag {
     background-color: rgba(186, 110, 70, 0.319);
     border: none;
-    color: white;
+    color: black;
     padding: 3px 15px;
     border-radius: 30px;
     font-size: 14px;
@@ -68,24 +81,26 @@
 
 .ant-tabs-tab {
     background-color: rgba(186, 110, 70, 0.319) !important;
-    border: none !important;
-    color: white !important;
+    /* border: 1px solid black !important; */
+    color: black !important;
     padding: 3px 15px !important;
-    border-radius: 30px !important;
+    /* border-radius: 30px !important; */
     font-size: 14px !important;
 }
 
 .FiltersTabsContainer {
-    padding-top: 4rem;
+    padding-top: 40px;
 }
 
 .ant-tabs-tab-active {
     background-color: rgba(186, 110, 70, 0.714) !important;
 
+
 }
 
 .ant-tabs-tab-btn {
-    color: white !important;
+    color: black !important;
+    padding: 7px 10px !important;
 }
 
 .ant-tabs-ink-bar {
@@ -101,6 +116,7 @@
         opacity: 0;
         transform: translateY(10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -108,12 +124,79 @@
 }
 
 
+.ImagePodcastContainer .AnimatedButtonAnimation {
+    position: absolute;
+    top: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transform: translatey(50px);
+    transition: .5s;
+}
 
-@media(max-width:1200px){
+.ImagePodcastContainer:hover {
+    transform: translateY(-10px);
+    transition: .5s;
+}
+
+.ImagePodcastContainer:hover .AnimatedButtonAnimation {
+    position: absolute;
+    top: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: .5s;
+
+}
+
+.ImagePodcastContainer:hover .AnimatedButtonAnimation button {
+    background-color: rgb(186, 111, 70);
+    border: none;
+}
+
+.ImagePodcastContainer::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.342);
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.ImagePodcastContainer:hover::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.342);
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+@media(max-width:1200px) {
     .PodcastCardContainer {
         padding: 7rem 0rem;
         padding-top: 2rem !important;
     }
+
     .PodcastCardContainer div .ant-row {
         border-top: 0.2px solid rgba(255, 255, 255, 0.242);
         border-bottom: 0.2px solid rgba(255, 255, 255, 0.242);
@@ -121,11 +204,12 @@
         transition: .5s;
         cursor: pointer;
     }
+
     .PodcastCardContainer div .ant-row:hover {
         border-top: 0.2px solid rgba(255, 255, 255, 0.774);
         border-bottom: 0.2px solid rgba(255, 255, 255, 0.774);
         padding: 2rem 0rem;
         transition: .5s;
     }
-    
+
 }

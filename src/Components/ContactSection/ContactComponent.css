@@ -1,0 +1,85 @@
+.parallaxImageContainer {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallaxImageContainer img {
+    width: 100%;
+    height: 130%;
+    transition: transform 0.1s ease-out;
+}
+
+.InsideBoxContainer {
+    height: 70%;
+    width: 60%;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.InsideBoxContainer>div {
+    height: 80%;
+    width: 90%;
+}
+
+/* .MobileTypeStyleContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
+} */
+
+.MobileTypeStyleContainer {
+    border: 2px solid #CDCECF;
+    height: 100%;
+    width: 60%;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 40px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.MobileTypeStyleContainer div {
+    border: 15px solid black;
+    /* height: 100%; */
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    /* width: 100%; */
+    position: absolute;
+}
+
+
+.MobileTypeStyleContainer div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.InsideBoxContainer div .ant-row .ant-col:first-child {
+    display: flex;
+    justify-content: center;
+}
+
+.InsideBoxContainer div .ant-row .ant-col:last-child>div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.InsideBoxContainer .AnimatedButtonAnimation{
+    display: flex;
+    justify-content: start;
+}

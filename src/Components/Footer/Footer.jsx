@@ -12,12 +12,15 @@ const Footer = () => {
 
                             </Col>
                             <Col lg={12} md={12}>
-
+                                <div>
+                                    <p>Instagram</p>
+                                    <p>Linkedin</p>
+                                </div>
                             </Col>
                         </Row>
                     </div>
                     <div className="Copywritetext">
-                        <p>@2025 OutLead Solutions. All rights reserved.</p>
+                        <p>DESIGNED BY OUTLEAD SOLUTIONS</p>
                     </div>
                 </div>
             </section>

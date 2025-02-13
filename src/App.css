@@ -1,15 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 a {
   list-style: none;
-  font-family: "Space Grotesk", serif;
+  font-family: "Libre Caslon Text", serif;
   font-weight: 600;
   line-height: 1rem;
   color: #14142b;
 }
 
-p,span,li{
+.fontFamily {
+  font-family: "Pinyon Script", serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 18px;
+}
+
+.Bigheading {
+  font-size: 5.4rem;
+  line-height: 80px;
+}
+
+.Mediumheading {
+  font-size: 3.1rem;
+  line-height: 60px;
+}
+
+.fontFamilyAnother {
+  font-family: "Cormorant Unicase", serif;
+  text-transform: uppercase;
+  /* font-size: 5.4rem; */
+  font-weight: 400;
+  /* line-height: 80px; */
+  margin: 0px !important;
+}
+
+p,
+span,
+li {
+  font-size: 1rem;
+  font-family: "Raleway", serif;
 }
 
 
@@ -19,23 +52,28 @@ p,span,li{
   font-size: 1rem;
   font-weight: 500;
   list-style: none;
-  font-family: "Space Grotesk", serif;
+  font-family: "Libre Caslon Text", serif;
 }
 
 .MainHeading {
-  font-family: "Space Grotesk", serif;
+  font-family: "Libre Caslon Text", serif;
   color: #14142b;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 4.25rem;
   font-weight: 600;
   line-height: 4.75rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.577);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.577);
+  padding: 20px 0px !important;
 }
 
-.MainHeading span{
+
+.MainHeading span {
   font-size: 4.25rem;
   color: #BA6F46;
 }
+
 .AnimatedButtonAnimation {
   display: flex;
   justify-content: center;
@@ -55,7 +93,7 @@ p,span,li{
   justify-content: space-between;
   transition: .5s;
   height: 40px;
-  min-width: 160px;
+  /* min-width: 160px; */
   cursor: pointer;
 
 }
@@ -85,6 +123,7 @@ p,span,li{
   transition: .5s;
   height: 0px;
   width: 0px;
+  margin-right: 30px;
 
 }
 
@@ -94,9 +133,9 @@ p,span,li{
   color: #BA6F46;
 }
 
-@media (max-width:900px){
+@media (max-width:900px) {
   .MainHeading {
-    font-family: "Space Grotesk", serif;
+    font-family: "Libre Caslon Text", serif;
     color: #14142b;
     margin-top: 0;
     margin-bottom: 0;
@@ -105,11 +144,12 @@ p,span,li{
     line-height: unset;
   }
 
-.MainHeading span{
-  font-size: 2rem;
-  color: #BA6F46;
-}
-.AnimatedButtonAnimation{
-  margin-bottom: 0px;
-}
+  .MainHeading span {
+    font-size: 2rem;
+    color: #BA6F46;
+  }
+
+  .AnimatedButtonAnimation {
+    margin-bottom: 0px;
+  }
 }

@@ -1,13 +1,16 @@
-import React, { useState } from "react";
-import { Drawer, Button } from "antd";
-import { MenuOutlined } from "@ant-design/icons";
+import React, { useState, useEffect } from "react";
+import { Drawer } from "antd";
 import { Link } from "react-router-dom";
-import NavigationLinks from "./NavigationData";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { CloseOutlined } from "@ant-design/icons"; // Import close icon
+import NavigationLinks from "./NavigationData";
 import "./Navigation.css";
+import { MdOutlineCancel } from "react-icons/md";
 
 const MegaNavigation = () => {
     const [open, setOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     const showDrawer = () => {
         setOpen(true);
@@ -17,10 +20,33 @@ const MegaNavigation = () => {
         setOpen(false);
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 300);
+        };
+
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
     return (
         <>
-            <section className="AdjustPadding">
-                <div className="NavigationContainer">
+            <section className={`AdjustPadding ${scrolled ? "withShadow" : ""}`}>
+                <div
+                    className="NavigationContainer"
+                    style={{
+                        padding: isMobile ? "0rem 1rem" : scrolled ? "0rem 6rem" : "1rem 6rem",
+                    }}
+                >
                     <Link to="/" className="LogoContainer">
                         <img
                             src="/Images/YourInspireLogo.png"
@@ -31,11 +57,11 @@ const MegaNavigation = () => {
                     </Link>
 
                     {/* Menu Button */}
-
-                    <div className="AnimatedButtonAnimation" style={{margin:"0px"}}>
-                        <button onClick={showDrawer} style={{minWidth:"95px"}}><span><FaArrowRightLong /></span> Menu</button>
+                    <div className="AnimatedButtonAnimation" style={{ margin: "0px" }}>
+                        <button onClick={showDrawer} >
+                            <span><FaArrowRightLong /></span> Menu
+                        </button>
                     </div>
-
                 </div>
             </section>
 
@@ -43,11 +69,20 @@ const MegaNavigation = () => {
             <Drawer
                 title=""
                 placement="top"
-                closable={true}
+                closable={false} // Hide default close button
                 onClose={closeDrawer}
                 open={open}
-                height={300} // Controls the height of the drawer
+                height={300}
+                id="Drawer"
             >
+                {/* Custom Close Button Inside Drawer */}
+                <div className="AnimatedButtonAnimation" style={{ margin: "0px" }}>
+                    <button onClick={closeDrawer} style={{ minWidth: "95px" }}>
+                        <span><MdOutlineCancel /></span> Closed
+                    </button>
+                </div>
+
+
                 <ul className="NavigationList">
                     {NavigationLinks.map((item, index) => (
                         <li key={index} className="NavigationLinks">

@@ -1,3 +1,12 @@
 #FooterContentContainer{
     background-color: rgba(186, 111, 70, 0.48);
+    margin: 20px;
+    border-radius: 20px;
+}
+#FooterContentContainer .PaddingAdjust{
+    padding-bottom: 2rem !important;
+}
+.Copywritetext{
+    display: flex;
+    justify-content: end;
 }

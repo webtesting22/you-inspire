@@ -44,6 +44,15 @@ const PodcastData = [
         tag: "Socialogy",
         category: "Socialogy"
     },
+    {
+        EPDate: "9.20.2022",
+        image: "https://plus.unsplash.com/premium_photo-1689052849178-c115721f726c?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "Good design is made from coffee",
+        description: "Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Suspendisse eu ligula. Nunc nec neque. Praesent ut ligula non mi varius sagittis. Aliquam erat volutpat.",
+        author: "with Isaiah Fischer",
+        tag: "Socialogy",
+        category: "Socialogy"
+    },
 
 ]
 export default PodcastData

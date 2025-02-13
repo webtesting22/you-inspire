@@ -8,10 +8,10 @@ const BrandInfo = () => {
             <section className="PaddingAdjust" id="AboutCompanySection">
                 <div style={{ display: "flex", justifyContent: "center" }}>
                     <div className="MainheadingContainer">
-                        <h1 className="MainHeading">Behind every dream lies a story of courage and resilience.</h1>
-                        <p>Step into the minds of the world’s most inspiring figures as they share the untold moments that shaped their success. From battles with self-doubt to bold leaps of faith, their journeys reveal the power of resilience and determination.</p>
+                        <h1 className="MainHeading">You Inspire – Where Dreams Take Flight</h1>
+                        <p>Real stories, real struggles, and real success. Honest conversations with those who’ve made it, for those who are making it. Your journey matters—be inspired, take action, and leave your legacy.</p>
                         <div className="AnimatedButtonAnimation">
-                            <button><span><FaArrowRightLong /></span> Show Podcasts</button>
+                            <button><span><FaArrowRightLong /></span> Read More</button>
                         </div>
                     </div>
                 </div>

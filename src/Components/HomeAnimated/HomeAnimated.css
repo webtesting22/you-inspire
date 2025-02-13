@@ -126,3 +126,76 @@
     }
 
 }
+
+
+.homePageContainerMain {
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.homePageContainerMain .backgroundSetImage img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlayContainerFade {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.713);
+    z-index: 3;
+}
+.ContentAndSliderDesigns{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    z-index: 5555;
+}
+.ContentAndSliderDesigns .insideContentContainer{
+        width: 70%;
+        height: 70%;
+        margin-top: 70px;
+}
+.ContentAndSliderDesigns .insideContentContainer .swiper {
+    height: 100%;
+}
+.ContentAndSliderDesigns .insideContentContainer .swiper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ContentAndSliderDesigns .insideContentContainer .swiper .swiper-slide div{
+    height: 100%;
+}
+.insideContentContainer .LeftSidemainPageContent{
+    color: white;
+    position: sticky;
+    z-index: 55;
+    width: 120%;
+}
+
+.LeftSidemainPageContent .AnimatedButtonAnimation{
+    display: flex;
+    justify-content: start !important;
+}
+.LeftSidemainPageContent .AnimatedButtonAnimation button{
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+
+}
+.LeftSidemainPageContent .AnimatedButtonAnimation button span{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: white;
+}
