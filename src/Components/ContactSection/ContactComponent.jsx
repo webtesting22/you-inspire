@@ -47,8 +47,8 @@ const ContactComponent = () => {
                                 <div>
                                     <div>
                                         <p className="fontFamily">demo demo demo</p>
-                                        <h2 className="fontFamilyAnother Mediumheading">This is a Great Spot to Promote your Freebie!</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laudantium dolorem aliquid, incidunt aspernatur corporis accusamus porro nisi mollitia possimus!</p>
+                                        <h2 className="fontFamilyAnother Mediumheading">A Community, Not Just a Podcast </h2>
+                                        <p>You Inspire is more than just a podcast—it's a thriving community where stories spark change. Through insightful conversations and real-life experiences, we bring together voices that inspire, empower, and connect individuals on their journey to success.</p>
                                         <div className="AnimatedButtonAnimation" style={{ margin: "0px" }}>
                                             <a href="tel:+919824002125">
                                                 <button>
