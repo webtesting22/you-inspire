@@ -25,7 +25,7 @@ const HomePageAbout = () => {
                                     data-aos-duration="1000"
                                     data-aos-delay="300">
                                     <div className="BackgroundImageContainer">
-                                        <img src={ImageContainer} alt="" />
+                                        <img src={ImageContainer} alt="You Inspire - Empowering Change Through Real-Life Stories" />
                                     </div>
                                 </div>
 
