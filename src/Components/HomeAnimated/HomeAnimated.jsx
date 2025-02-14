@@ -57,9 +57,9 @@ const HomeAnimated = () => {
                                         data-aos-duration="1200"
                                         data-aos-delay="600">
                                         <div>
-                                            <p className="fontFamily">Podcast Podcast</p>
-                                            <h1 className="fontFamilyAnother Bigheading">Where ambition meets experience</h1>
-                                            <p>Etiam rhoncus. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Praesent turpis. Etiam ut purus mattis mauris sodales aliquam.</p>
+                                            <p className="fontFamily">You Inspire</p>
+                                            <h1 className="fontFamilyAnother Bigheading">Where Ambition Meets Experience</h1>
+                                            <p>Behind every achievement is an untold struggle—listen, learn, and get inspired to chase your own success. </p>
 
                                             <div className="AnimatedButtonAnimation" style={{ margin: "0px" }}>
                                                 <Link to="/about-us">

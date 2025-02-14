@@ -64,7 +64,12 @@
         position: sticky;
         z-index: 5;
     }
-    .MissionVisionCard{
+
+    .MissionVisionCard {
         padding: 20px 0px !important;
+    }
+
+    .paddingMobileRemoe {
+        padding: 0px !important;
     }
 }

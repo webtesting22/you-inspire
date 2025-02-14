@@ -98,7 +98,7 @@ const OurSpeciality = () => {
                                             style={{ height: "600px" }}
                                         >
                                             {OurSpecialityData.map((item, index) => (
-                                                <SwiperSlide key={index}> {/* Key prop should be here */}
+                                                <SwiperSlide key={index} style={{height:"100%"}}> {/* Key prop should be here */}
                                                     <div className="BorderStyle" >
                                                         <div>
                                                             <h2 className="fontFamilyAnother Mediumheading">0{index + 1} / {item.title}</h2>

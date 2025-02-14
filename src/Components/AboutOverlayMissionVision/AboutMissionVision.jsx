@@ -34,7 +34,7 @@ const AboutMissionVision = () => {
                 <div id="MissionVisionContainer">
                     <div className="OverlayParallaxMissionVisionContainer">
                         <div className="OverlayBackgroundImageContainer">
-                            <img src="https://images.unsplash.com/photo-1734834788640-cc60a0993ed3?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="You Inspire - Mission, Vision, and Purpose of the Video Podcast" />
+                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/inventoryManagement/LxiYowVAE9igSpChQsQh/C0018140-Maple_leaves_on_ground 1.png" alt="You Inspire - Mission, Vision, and Purpose of the Video Podcast" />
                         </div>
                         <div className="MissionVisionPurposeContent">
                             <div className="PaddingAdjust">
@@ -44,7 +44,7 @@ const AboutMissionVision = () => {
                                         <p>We believe that every journey, every challenge, and every triumph carries the power to inspire. Through real stories of passion, resilience, and success, we bridge the gap between ambition and achievement—proving that greatness is not just pursued but shared.</p>
                                     </div>
                                 </div>
-                                <div className="PaddingAdjust">
+                                <div className="PaddingAdjust paddingMobileRemoe">
                                     <Row>
                                         {MissionVisionPurposeData.map((item, index) => (
                                             <Col lg={8} md={12}>
