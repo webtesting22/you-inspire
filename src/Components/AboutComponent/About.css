@@ -6,11 +6,17 @@
     padding-right: 20px;
 }
 
-@media (max-width:769px){
-    .removeMobile{
+@media (max-width:769px) {
+    .removeMobile {
         display: none !important;
     }
-    .TopHeadingContainermisionVision div{
+
+    .TopHeadingContainermisionVision div {
         width: 100% !important;
     }
+
+    #AboutContentContainer .ant-row .ant-col:first-child {
+        padding-right: 0px;
+    }
+
 }

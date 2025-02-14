@@ -4,6 +4,7 @@ import { Row, Col } from "antd";
 import BackCurveImage from "./BackCurveImage.avif"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FaArrowRightLong } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -61,9 +62,11 @@ const HomeAnimated = () => {
                                             <p>Etiam rhoncus. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Praesent turpis. Etiam ut purus mattis mauris sodales aliquam.</p>
 
                                             <div className="AnimatedButtonAnimation" style={{ margin: "0px" }}>
+                                                <Link to="/about-us">
                                                 <button >
                                                     <span><FaArrowRightLong /></span>     You Inspire
                                                 </button>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

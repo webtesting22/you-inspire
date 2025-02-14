@@ -13,11 +13,13 @@ const HomePageAbout = () => {
                                 <div data-aos="fade-up"
                                     data-aos-duration="1000"
                                     data-aos-delay="300">
-                                    <p className="fontFamily">About Your Business</p>
-                                    <h2 className="fontFamilyAnother Mediumheading">Where ambition meets experience</h2>
-                                    <p>In a world brimming with untold stories, where dreams rise like the morning sun and ambitions carve their way through time, You Inspire is born—a sanctuary of voices, a symphony of struggles, and a testament to triumph.
+                                    <p className="fontFamily">You Inspire</p>
+                                    <h2 className="fontFamilyAnother Mediumheading">Why come to You Inspire</h2>
+                                    <p>Every success story starts with a single step, every breakthrough comes after a struggle, and every leader, creator, and innovator has a journey worth sharing.
                                     </p>
-                                    <p>Here, the world’s most inspiring minds unravel their journeys, peeling back the layers of success to reveal the unseen—moments of doubt, sparks of courage, and the quiet perseverance that turned their dreams into reality. They were once where you are, standing at the edge of uncertainty, searching for the next step. </p>
+                                    <p>You Inspire is the podcast that uncovers the real stories behind success—the challenges, the turning points, and the lessons that shaped extraordinary people.  </p>
+                                    <p>As we gear up for our big launch, we’re looking for trailblazers, risk-takers, and dreamers who have walked the path and want to share what it really takes to make it.
+                                    </p>
                                 </div>
                             </Col>
                             <Col lg={12}>

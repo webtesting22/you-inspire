@@ -57,8 +57,8 @@ const MegaNavigation = () => {
                     style={{
                         padding: isMobile ? "0rem 1rem" : scrolled ? "0rem 6rem" : "1rem 6rem",
                         backdropFilter: scrolled ? "blur(5px)" : "blur(0px)",
-                        transition:".5s",
-                        background:scrolled?"white":"transparent"
+                        transition: ".5s",
+                        background: scrolled ? "white" : "transparent"
                     }}
                 >
                     <Link to="/" className="LogoContainer">

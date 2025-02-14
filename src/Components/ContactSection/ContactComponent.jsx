@@ -46,7 +46,7 @@ const ContactComponent = () => {
                             <Col lg={14}>
                                 <div>
                                     <div>
-                                        <p className="fontFamily">demo demo demo</p>
+                                        <p className="fontFamily">Lessons from the Best</p>
                                         <h2 className="fontFamilyAnother Mediumheading">A Community, Not Just a Podcast </h2>
                                         <p>You Inspire is more than just a podcast—it's a thriving community where stories spark change. Through insightful conversations and real-life experiences, we bring together voices that inspire, empower, and connect individuals on their journey to success.</p>
                                         <div className="AnimatedButtonAnimation" style={{ margin: "0px" }}>

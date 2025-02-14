@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="PaddingAdjust">
                     <div className="FooterHeaderPart">
                         <div style={{ display: "flex", justifyContent: "center" }}>
-                            <p className="fontFamily">Popular Popular</p>
+                            <p className="fontFamily">Your Story Matters</p>
                         </div>
                         {/* <Row>
                             <Col lg={8}>
