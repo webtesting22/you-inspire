@@ -64,8 +64,8 @@ const Footer = () => {
                                             <p className="fontFamilyAnother smallHeading">Social Connects</p>
                                             <div>
                                                 <ul>
-                                                    <li>Instagram</li>
-                                                    <li>Linkedin</li>
+                                                    <Link to="/"><li>Instagram</li></Link>
+                                                    <Link to="/"><li>Linkedin</li></Link>
                                                 </ul>
                                             </div>
                                         </div>
