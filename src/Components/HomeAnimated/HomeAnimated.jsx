@@ -10,7 +10,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, EffectFade, Pagination, Navigation } from 'swiper/modules';
-
+import BackgroundImage from "./BackgroundImage.png"
 const HomeAnimated = () => {
 
     useEffect(() => {
@@ -47,7 +47,7 @@ const HomeAnimated = () => {
                             data-aos-delay="300">
 
                         </div>
-                        <img src="https://images.unsplash.com/photo-1482442120256-9c03866de390?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                        <img src={BackgroundImage} alt="" />
                     </div>
                     <div className="ContentAndSliderDesigns">
                         <div className="insideContentContainer">
