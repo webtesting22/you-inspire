@@ -39,22 +39,26 @@ const MegaNavigation = () => {
     }, []);
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 800); // Change color after 300px
+            setIsScrolled(window.scrollY > 300); // Change color after 300px
         };
 
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
     return (
         <>
-            <section className={`AdjustPadding ${scrolled ? "withShadow" : ""}`}>
+            <section className={`AdjustPadding ${scrolled ? "withShadow" : ""}`} >
                 <div
                     className="NavigationContainer"
                     data-aos="fade-down"
-                    data-aos-duration="1500"
-                    data-aos-delay="800"
+                    data-aos-duration="1000"
+                    // data-aos-delay="200"
                     style={{
                         padding: isMobile ? "0rem 1rem" : scrolled ? "0rem 6rem" : "1rem 6rem",
+                        backdropFilter: scrolled ? "blur(5px)" : "blur(0px)",
+                        transition:".5s",
+                        background:scrolled?"white":"transparent"
                     }}
                 >
                     <Link to="/" className="LogoContainer">
