@@ -99,9 +99,11 @@ const MegaNavigation = () => {
 
                 <ul className="NavigationList">
                     {NavigationLinks.map((item, index) => (
-                        <li key={index} className="NavigationLinks">
-                            {item.link}
-                        </li>
+                        <Link to={item.path} onClick={closeDrawer} style={{ display: "flex" }}>
+                            <li key={index} className="NavigationLinks">
+                                {item.link}
+                            </li>
+                        </Link>
                     ))}
                 </ul>
             </Drawer>

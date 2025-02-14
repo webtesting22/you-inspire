@@ -1,10 +1,10 @@
 const NavigationLinks = [
     {
-        path: "Home",
+        path: "/",
         link: "Home"
     },
     {
-        path: "About",
+        path: "/about-us",
         link: "About"
     },
     // {
