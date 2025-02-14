@@ -105,3 +105,6 @@
     position: absolute;
     bottom: -10px;
 } */
+ .FooterinsideBottomContainer li{
+    color: white !important;
+ }

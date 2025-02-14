@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css"
 import { Row, Col } from "antd";
+import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <>
@@ -42,8 +43,8 @@ const Footer = () => {
                                         <p className="fontFamilyAnother smallHeading">Navigate</p>
                                         <div>
                                             <ul>
-                                                <li>Home</li>
-                                                <li>About</li>
+                                                <Link to="/"><li>Home</li></Link>
+                                                <Link to="/about-us"><li>About</li></Link>
 
                                             </ul>
                                         </div>

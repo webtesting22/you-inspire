@@ -1,0 +1,70 @@
+.OverlayParallaxMissionVisionContainer {
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+}
+
+.OverlayBackgroundImageContainer {
+    position: absolute;
+    height: 100%;
+    /* width: 100%; */
+    left: 0px;
+    right: 0px;
+}
+
+.OverlayBackgroundImageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.OverlayBackgroundImageContainer::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.75);
+    top: 0px;
+    bottom: 0px;
+}
+
+.MissionVisionPurposeContent {
+    position: absolute;
+    color: white;
+}
+
+.MissionVisionCard {
+    padding: 20px;
+}
+
+.TopHeadingContainermisionVision {
+    display: flex;
+    justify-content: center;
+
+}
+
+.TopHeadingContainermisionVision div {
+    width: 60%;
+    text-align: center;
+}
+
+@media (max-width:679px) {
+    .OverlayParallaxMissionVisionContainer {
+        position: relative;
+        height: 100% !important;
+        overflow: hidden;
+    }
+
+    .MissionVisionPurposeContent {
+        position: static;
+        color: white;
+    }
+
+    .TopHeadingContainermisionVision {
+        position: sticky;
+        z-index: 5;
+    }
+    .MissionVisionCard{
+        padding: 20px 0px !important;
+    }
+}

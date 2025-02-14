@@ -5,6 +5,7 @@ import CommonHomeRoutes from './Components/CommonHome/CommonHomeRoute';
 import Podcast from './Components/SinglePodcast/Podcast';
 import Footer from './Components/Footer/Footer';
 import WhatsAppButton from './Components/WhatsappBtn/WhatsappBtn';
+import AboutBrand from './Components/AboutUs/AboutBrand';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         {/* Set CommonHomeRoutes at "/" */}
         <Route path="/" element={<CommonHomeRoutes />} />
         <Route path="/podcast" element={<Podcast />} />
+        <Route path="/about-us" element={<AboutBrand />} />
       </Routes>
       <WhatsAppButton/>
       <Footer />

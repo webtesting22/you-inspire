@@ -1,0 +1,16 @@
+#AboutContentContainer {
+    background-color: white;
+}
+
+#AboutContentContainer .ant-row .ant-col:first-child {
+    padding-right: 20px;
+}
+
+@media (max-width:769px){
+    .removeMobile{
+        display: none !important;
+    }
+    .TopHeadingContainermisionVision div{
+        width: 100% !important;
+    }
+}
