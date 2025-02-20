@@ -92,13 +92,18 @@ const OurSpeciality = () => {
                                             // pagination={{
                                             //     clickable: true,
                                             // }}
+                                            breakpoints={{
+                                                0: { slidesPerView: 2 }, // For mobile screens
+                                                768: { slidesPerView: 3 } // For tablets and larger screens
+                                            }}
                                             speed={600}
                                             modules={[Autoplay, FreeMode, Pagination]}
                                             className="mySwiper"
-                                            style={{ height: "600px" }}
+                                            id="SwiperCss"
+
                                         >
                                             {OurSpecialityData.map((item, index) => (
-                                                <SwiperSlide key={index} style={{height:"100%"}}> {/* Key prop should be here */}
+                                                <SwiperSlide key={index} style={{ height: "100%" }}> {/* Key prop should be here */}
                                                     <div className="BorderStyle" >
                                                         <div>
                                                             <h2 className="fontFamilyAnother Mediumheading">0{index + 1} / {item.title}</h2>

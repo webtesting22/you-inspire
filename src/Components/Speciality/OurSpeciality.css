@@ -41,7 +41,17 @@
     padding: 30px 0px;
 }
 
+#SwiperCss{
+    height: 600px;
+}
+
 @media (max-width:900px){
+    #ourSpecialityContainer .ant-row .ant-col:nth-child(2){
+        margin-top: 2rem;
+    }
+    #SwiperCss{
+        height: 400px;
+    }
     #ourSpecialityContainer .ant-row .ant-col:last-child {
         padding-left: 0px;
     }
