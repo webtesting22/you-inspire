@@ -70,9 +70,9 @@ const OurSpeciality = () => {
                                 <div className="MainContainerSpecialityImage" data-aos="fade-right"
                                     data-aos-duration="1000"
                                     data-aos-delay="300">
-                                    <div className="BackgroundImageContainer">
-                                        <img src="./Images/Imageused3.png" alt="" />
-                                    </div>
+                                    {/* <div className="BackgroundImageContainer"> */}
+                                        <img src="./Images/Imageused2.jpg" alt="" style={{width:"100%",height:"100%",objectFit:"cover"}}/>
+                                    {/* </div> */}
                                 </div>
                             </Col>
                             <Col lg={12}>

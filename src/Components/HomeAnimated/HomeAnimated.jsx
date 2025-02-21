@@ -59,7 +59,7 @@ const HomeAnimated = () => {
                                         <div>
                                             <p className="fontFamily">You Inspire</p>
                                             <h1 className="fontFamilyAnother Bigheading">Where Ambition Meets Experience</h1>
-                                            <p>Behind every achievement is an untold struggle—listen, learn, and get inspired to chase your own success. </p>
+                                            <p>Behind every achievement is an untold struggle—listen, learn, and get inspired to chase your own success.</p>
 
                                             <div className="AnimatedButtonAnimation" style={{ margin: "0px" }}>
                                                 <Link to="/about-us">
