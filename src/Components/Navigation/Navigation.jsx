@@ -71,7 +71,14 @@ const MegaNavigation = () => {
                     </Link>
 
                     {/* Menu Button */}
-                    <div className="AnimatedButtonAnimation" style={{ margin: "0px" }}>
+                    <div id="pcnav">
+                        <ul style={{ display: "flex", gap: "30px" }}>
+                            {NavigationLinks.map((item, index) => (
+                                <li key={index} ><Link to={item.path} style={{ color: scrolled ? "black" : "white" }}>{item.link}</Link></li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className="AnimatedButtonAnimation" style={{ margin: "0px" }} id="MobileNav">
                         <button onClick={showDrawer} className={`animatedButton ${isScrolled ? "whiteBg" : "redBg"}`}>
                             <span><FaArrowRightLong /></span> Menu
                         </button>

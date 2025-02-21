@@ -175,7 +175,8 @@
 @media (max-width:1500px) {
     .ContentAndSliderDesigns .insideContentContainer {
         /* width: 90%; */
-        padding: 0rem 6rem;
+        width: 100%;
+        padding: 0rem 1rem;
         height: 70%;
         margin-top: 70px;
     }

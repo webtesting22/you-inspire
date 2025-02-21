@@ -110,14 +110,30 @@
     padding: 1rem 5rem;
     display: flex;
     justify-content: end;
+    /* display: none !important; */
 
+}
+#MobileNav{
+    display: none !important;
+}
+
+#pcnav {
+    display: block;
 }
 
 @media (max-width:769px) {
+    #MobileNav{
+        display: block !important;
+    }
+    #pcnav {
+        display: none;
+    }
+
     #Drawer .AnimatedButtonAnimation {
         padding: 0rem 0rem;
         display: flex;
         justify-content: end;
+        /* display: block; */
 
     }
 

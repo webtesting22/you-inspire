@@ -4,12 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
 a {
   list-style: none;
-  font-family: "Libre Caslon Text", serif;
+  font-family: 'Helvetica Neue', sans-serif;
   font-weight: 600;
   line-height: 1rem;
   color: #14142b;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .fontFamily {
@@ -168,9 +171,10 @@ ul {
     font-size: 3rem;
     line-height: 60px;
   }
+
   .Mediumheading {
     font-size: 2rem;
     line-height: 40px;
   }
-  
+
 }
