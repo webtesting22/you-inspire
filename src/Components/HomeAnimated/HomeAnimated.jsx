@@ -71,7 +71,7 @@ const HomeAnimated = () => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col lg={12} style={{ height: "100%" }}>
+                                {/* <Col lg={12} style={{ height: "100%" }}>
                                     <div style={{ height: "100%" }}>
                                         <div style={{ height: "100%" }} data-aos="fade-right"
                                             data-aos-duration="1300"
@@ -109,7 +109,7 @@ const HomeAnimated = () => {
                                             </Swiper>
                                         </div>
                                     </div>
-                                </Col>
+                                </Col> */}
                             </Row>
                         </div>
                     </div>

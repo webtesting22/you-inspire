@@ -71,7 +71,7 @@ const OurSpeciality = () => {
                                     data-aos-duration="1000"
                                     data-aos-delay="300">
                                     <div className="BackgroundImageContainer">
-                                        <img src={ImageContainer} alt="" />
+                                        <img src="./Images/Imageused3.png" alt="" />
                                     </div>
                                 </div>
                             </Col>
