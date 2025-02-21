@@ -171,16 +171,22 @@
     height: 70%;
     margin-top: 70px;
 }
-
-@media (max-width:1500px) {
+@media (max-width:1200px){
     .ContentAndSliderDesigns .insideContentContainer {
         /* width: 90%; */
-        width: 100%;
-        padding: 0rem 1rem;
+        padding: 0rem 1rem !important;
         height: 70%;
         margin-top: 70px;
     }
 }
+/* @media (max-width:1500px) {
+    .ContentAndSliderDesigns .insideContentContainer {
+        width: 90%;
+        padding: 0rem 6rem;
+        height: 70%;
+        margin-top: 70px;
+    }
+} */
 
 .ContentAndSliderDesigns .insideContentContainer .swiper {
     height: 100%;
