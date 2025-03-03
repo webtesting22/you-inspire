@@ -256,7 +256,7 @@
   bottom: 0px;
   right:-2px;
     display: inline-flex;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(2.8px);
 }
 
 @media (max-width:900px) {

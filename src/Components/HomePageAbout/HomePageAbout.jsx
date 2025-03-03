@@ -13,7 +13,7 @@ const HomePageAbout = () => {
                                 <div data-aos="fade-up"
                                     data-aos-duration="1000"
                                     data-aos-delay="300">
-                                    <p className="fontFamily">You Inspire</p>
+                                    {/* <p className="fontFamily">You Inspire</p> */}
                                     <h2 className="fontFamilyAnother Mediumheading">Why come to You Inspire</h2>
                                     <p>Every success story starts with a single step, every breakthrough comes after a struggle, and every leader, creator, and innovator has a journey worth sharing.
                                     </p>

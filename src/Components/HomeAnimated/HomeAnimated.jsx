@@ -11,6 +11,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, EffectFade, Pagination, Navigation } from 'swiper/modules';
 import BackgroundImage from "./BackgroundImage.png"
+import PodcastIcon from "./PodcastIcon.png"
 const HomeAnimated = () => {
 
     useEffect(() => {
