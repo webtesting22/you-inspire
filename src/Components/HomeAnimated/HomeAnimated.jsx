@@ -57,14 +57,14 @@ const HomeAnimated = () => {
                                         data-aos-duration="1200"
                                         data-aos-delay="600">
                                         <div>
-                                            <p className="fontFamily">You Inspire</p>
-                                            <h1 className="fontFamilyAnother Bigheading">Where Ambition Meets Experience</h1>
+                                            {/* <p className="fontFamily">You Inspire</p> */}
+                                            <h1 className="fontFamilyAnother Bigheading "><span className="fontFamilyAnother Bigheading"  id="blurRyEffectAdd">W</span>here Ambition Meets Experience</h1>
                                             <p>Behind every achievement is an untold struggle—listen, learn, and get inspired to chase your own success.</p>
 
                                             <div className="AnimatedButtonAnimation" style={{ margin: "0px" }}>
                                                 <Link to="/about-us">
                                                 <button >
-                                                    <span><FaArrowRightLong /></span>     You Inspire
+                                                    <span><FaArrowRightLong /></span>Podcast
                                                 </button>
                                                 </Link>
                                             </div>

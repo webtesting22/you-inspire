@@ -171,7 +171,8 @@
     height: 70%;
     margin-top: 70px;
 }
-@media (max-width:1200px){
+
+@media (max-width:1200px) {
     .ContentAndSliderDesigns .insideContentContainer {
         /* width: 90%; */
         padding: 0rem 1rem !important;
@@ -179,6 +180,7 @@
         margin-top: 70px;
     }
 }
+
 /* @media (max-width:1500px) {
     .ContentAndSliderDesigns .insideContentContainer {
         width: 90%;
@@ -240,7 +242,22 @@
     background-color: white;
 }
 
+#blurRyEffectAdd {
+    position: relative;
+    overflow: hidden;
+}
 
+#blurRyEffectAdd::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 0px;
+    background-color: transparent;
+  bottom: 0px;
+  right:-2px;
+    display: inline-flex;
+    backdrop-filter: blur(2px);
+}
 
 @media (max-width:900px) {
     .ContentAndSliderDesigns .insideContentContainer {
